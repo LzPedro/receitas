@@ -33,14 +33,7 @@ function App3() {
       }
     });
   }
-  //async function handleSubmit(event) {
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    //if(fullName.email==="arroiz" && fullName.password==="123"){
-        //login("arroiz");
-        navigate('/');  
-    //}
-  }
+  
   const handleLogin = async (event) => {
     event.preventDefault();
     try {

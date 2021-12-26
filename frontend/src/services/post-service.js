@@ -8,6 +8,7 @@ const getAllPublicPosts = () => {
 };
 
 const getAllPrivatePosts = () => {
+  console.log("Private")
   return axios.get(API_URL + "/private", { headers: authHeader() });
 };
 
