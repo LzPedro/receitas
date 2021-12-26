@@ -15,7 +15,13 @@ const getAllPrivatePosts = () => {
 const getSpecificRecipe = (id) => {
   console.log("SpecificRecipe")
   console.log(id)
-  return axios.get(API_URL + "/private/", { headers: authHeader(), params: { id: id } });
+  const config = {
+    headers: authHeader(),
+    params: {
+       id: id 
+    },
+  }
+  return axios.get(API_URL + "/test", config);
 };
 
 const postService = {
