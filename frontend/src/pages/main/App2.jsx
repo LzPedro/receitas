@@ -34,7 +34,7 @@ const App2 = () => {
       <h1 className={styles.h1}>
             Pedidos
         </h1>
-        <h1>{privatePosts.map((post) => post.title )}</h1>
+        <h1 className={styles.h1}> {privatePosts.map((post) => post.title )} </h1>
   </div>
   );
 };
