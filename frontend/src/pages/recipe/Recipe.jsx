@@ -16,7 +16,6 @@ const Recipe = () => {
   useEffect(() => {
     PostService.getSpecificRecipe(id).then(
       (response) => {
-        console.log(response)
         setPrivatePosts(response.data);
       },
       (error) => {
@@ -42,9 +41,17 @@ const Recipe = () => {
           <h1>{privatePosts.map((post) => post.title )}</h1>
           <h2>{privatePosts.map((post) => post.summary )}</h2>
           <h1 className={styles.h1}>Ingredientes </h1>
-          <h2>{privatePosts.map((post) => post.title )}</h2>
+          <h2>{privatePosts.map((post) => 
+              post.ingredient.map((ingredient) =>
+              <li>{ingredient.item}</li>
+              )
+          )}</h2>
           <h1 className={styles.h1}>Modos de Preparo </h1>
-          <h2>{privatePosts.map((post) => post.title )}</h2>
+          <h2>{privatePosts.map((post) => 
+              post.directions.map((directions) =>
+              <li>{directions.Passo}</li>
+              )
+          )}</h2>
           <Button onClick={handleClick} className={styles.button}>Encerrar</Button>
         </div>
       );

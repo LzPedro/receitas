@@ -53,5 +53,13 @@ Caso algo não esteja claro, fique à vontade para fazer perguntas.
  - Adicionar funcionalidade de criar conta
  - Remover user/password de arquivo e mover para o banco
  - Mover frontend pro docker-compose também
+ - Arrumar css da página de receitas
+ - Indexar as fotos das receitas no mongo, pra aparecer junto
+
+# Pré-requisitos
+ - docker e docker-compose instalados
+# Como rodar o código
+ - docker-compose up para subir o backend
+ 
 
 
