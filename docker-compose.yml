@@ -1,15 +1,25 @@
 version: '3'
 services:
-  node:
+  backend:
+    command: npm start
+    restart: always
+    build:
+      context: .
+      dockerfile: Back.Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - ./backend/:/usr/src/app/
+  frontend:
     command: npm start
     restart: always
     build:
       context: .
       dockerfile: Front.Dockerfile
     ports:
-      - 5000:5000
+      - 3000:3000
     volumes:
-      - ./backend/:/usr/src/app/
+      - ./frontend/:/usr/src/app/
   mongo:
     restart: always
     image: mongo:4.4.6
@@ -17,5 +27,13 @@ services:
       - 27017:27017
     volumes:
       - mongodb:/data/db
+  mongo_seed:
+    image: mongo:3.2.6
+    links:
+      - mongo
+    volumes:
+      - ./mongo-seed:/mongo-seed
+    command:
+      /mongo-seed/import.sh
 volumes:
  mongodb:

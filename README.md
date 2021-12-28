@@ -45,21 +45,25 @@ Caso algo não esteja claro, fique à vontade para fazer perguntas.
 
  - Fazer 1 request, no lugar de 2 para acessar a receita
  - Adicionar Arquivo de Strings para facilitar tradução
+ - Melhor consistência entre inglês/português
  - Adicionar docker-compose pra executar testes
+ - Adicionar docker-compose de produção
  - Lidar melhor em caso de erros
  - Alguma forma mais fácil de adicionar receitas, do que converter pra Json?
  - Adicionar collection(mongoDB) para a execução das receitas
  - Adicionar navbar
  - Adicionar funcionalidade de criar conta
  - Remover user/password de arquivo e mover para o banco
- - Mover frontend pro docker-compose também
  - Arrumar css da página de receitas
  - Indexar as fotos das receitas no mongo, pra aparecer junto
+ - Melhorar os nomes dos arquivos
 
 # Pré-requisitos
  - docker e docker-compose instalados
 # Como rodar o código
- - docker-compose up para subir o backend
+ - criar 1 arquivo .env de acordo com o .env.example
+ - chmod +x no arquivo `mongo-seed/import.sh`
+ - `docker-compose up` para subir os serviços
  
 
 
