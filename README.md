@@ -52,5 +52,6 @@ Caso algo não esteja claro, fique à vontade para fazer perguntas.
  - Adicionar navbar
  - Adicionar funcionalidade de criar conta
  - Remover user/password de arquivo e mover para o banco
- 
+ - Mover frontend pro docker-compose também
+
 
