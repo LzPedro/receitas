@@ -21,27 +21,23 @@ const Recipe = () => {
       (error) => {
         console.log("Private page", error.response);
         // Invalid token
-        if (error.response) {
-          //AuthService.logout();
-          //navigate("/login");
-          //window.location.reload();
+        if (error.response.status == 403) {
+          AuthService.logout();
+          navigate("/login");
+          window.location.reload();
         }
       }
     );
   }, []);
 
       return (
-        <div>  
-        <h1 className={styles.h1}>Receitas </h1>
+        <div className={styles.container}> 
           <h1>{privatePosts.map((post) => post.title )}</h1>
           <h2>{privatePosts.map((post) => post.summary )}</h2>
           <h1 className={styles.h1}>Ingredientes </h1>
           <h2>{privatePosts.map((post) => post.ingredient )}</h2>
           <h1 className={styles.h1}>Modos de Preparo </h1>
           <h2>{privatePosts.map((post) => post.directions )}</h2>
-
-          <h1 className={styles.h1}>Titulo </h1>
-          <h2 className={styles.h1}>Ingredientes de {id} </h2>
         </div>
       );
 };

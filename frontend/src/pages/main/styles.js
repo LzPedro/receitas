@@ -66,15 +66,18 @@ const useStyles = makeStyles(() => ({
 
   
   button :{
+    display: 'block !important ',
+    margin: '0 auto !important ',
     appearance: 'none !important ',
     outline: '0 !important ',
     backgroundColor: '#F08A5D !important ',
     border: '0 !important ',
     padding: '10px 15px !important ',
+    width: 'auto !important',
     color: 'white !important ',
     borderRadius: '3px !important ',
-    width: '250px !important ',
     fontSize: '18px !important ',
+    marginBottom: '15px !important ',
   },
 }));
 

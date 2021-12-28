@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PostService from "../../services/post-service";
 import AuthService from "../../services/auth-service";
+import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 import useStyles from './styles.js';
 
@@ -20,7 +21,7 @@ const App2 = () => {
       (error) => {
         console.log("Private page", error.response);
         // Invalid token
-        if (error.response) {
+        if (error.response.status == 403) {
           AuthService.logout();
           navigate("/login");
           window.location.reload();
@@ -30,11 +31,12 @@ const App2 = () => {
   }, []);
 
   return (
-    <div>  
+    <div className={styles.container}>
       <h1 className={styles.h1}>
             Pedidos
         </h1>
-        <h1 className={styles.h1}> {privatePosts.map((post) => post.title )} </h1>
+        <h1 className={styles.h1}> {privatePosts.map((post) => <Button className={styles.button}> {post.title} </Button> )} </h1>
+        
   </div>
   );
 };

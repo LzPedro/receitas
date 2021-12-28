@@ -7,7 +7,7 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ./backend/:/usr/src/app/server
+      - ./backend/:/usr/src/app/
   mongo:
     restart: always
     image: mongo:4.4.6

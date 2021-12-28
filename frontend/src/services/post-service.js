@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from "./auth-header";
 
-const API_URL = "http://localhost:5000/recipes";
+const API_URL = "http://localhost:5000/recipe";
 
 const getAllPublicPosts = () => {
   return axios.get(API_URL + "/public");
@@ -18,10 +18,10 @@ const getSpecificRecipe = (id) => {
   const config = {
     headers: authHeader(),
     params: {
-       id: id 
+      recipe_id: id 
     },
   }
-  return axios.get(API_URL + "/test", config);
+  return axios.get(API_URL+"/id", config);
 };
 
 const postService = {

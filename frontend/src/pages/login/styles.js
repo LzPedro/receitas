@@ -16,13 +16,16 @@ const useStyles = makeStyles(() => ({
     textAlign: 'center',
     borderStyle: 'solid',
     borderColor: '#3d8579',
-    width: '50%',
+    width: '35%',
     background: '#3d8579',
+    borderRadius: '10px !important ',
   },
   
   h1 :{
     fontSize: '40px',
     fontWeight: '200',
+    whiteSpace: 'pre',
+    display: 'block',
   },
   
   input :{
@@ -31,12 +34,13 @@ const useStyles = makeStyles(() => ({
     borderRadius: '3px',
     fontFamily: "Source Sans Pro, sans-serif",
     padding: '10px 15px',
-    margin: '0 auto 10px auto',
-    display: 'block',
+    margin: '0 auto !important ',
+    display: 'block !important ',
     textAlign: 'center',
     fontSize: '18px',
     fontWeight: '300',
     borderColor: "white",
+    marginBottom: '15px !important ',
     "& .MuiOutlinedInput-root": {
       "&:hover fieldset": {
         borderColor: "white !important",
@@ -64,15 +68,18 @@ const useStyles = makeStyles(() => ({
 
   
   button :{
+    display: 'block !important ',
+    margin: '0 auto !important ',
     appearance: 'none !important ',
     outline: '0 !important ',
     backgroundColor: '#F08A5D !important ',
     border: '0 !important ',
     padding: '10px 15px !important ',
+    width: 'auto !important',
     color: 'white !important ',
     borderRadius: '3px !important ',
-    width: '250px !important ',
     fontSize: '18px !important ',
+    marginBottom: '15px !important ',
   },
 }));
 
