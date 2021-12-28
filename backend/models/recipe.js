@@ -9,25 +9,24 @@ const RecipeSchema = new Schema({
     },
     title: {
         type: String,
+        trim: true,
         required: true
     },
     summary: {
         type: String,
         required: false
     },
-    ingredient: {
-        type: String,
-        required: false
-    },
+    ingredient : [{
+        "item" : String
+         }],
     duration: {
         type: Number,
         min: 0,
         required: true
     },
-    directions: {
-        type: String,
-        required: true
-    }
+    directions : [{
+        "Passo" : String
+    }]
 });
 
 module.exports = Recipe = mongoose.model('recipe', RecipeSchema);

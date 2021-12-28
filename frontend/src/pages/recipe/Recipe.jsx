@@ -3,6 +3,7 @@ import PostService from "../../services/post-service";
 import AuthService from "../../services/auth-service";
 import { useNavigate, useParams } from "react-router-dom";
 import useStyles from './styles.js';
+import Button from '@mui/material/Button';
 
 const Recipe = () => {
   const styles = useStyles();
@@ -30,14 +31,21 @@ const Recipe = () => {
     );
   }, []);
 
+  const handleClick = async (event) => {
+    event.preventDefault();
+    navigate("/");
+    window.location.reload();
+  };
+
       return (
         <div className={styles.container}> 
           <h1>{privatePosts.map((post) => post.title )}</h1>
           <h2>{privatePosts.map((post) => post.summary )}</h2>
           <h1 className={styles.h1}>Ingredientes </h1>
-          <h2>{privatePosts.map((post) => post.ingredient )}</h2>
+          <h2>{privatePosts.map((post) => post.title )}</h2>
           <h1 className={styles.h1}>Modos de Preparo </h1>
-          <h2>{privatePosts.map((post) => post.directions )}</h2>
+          <h2>{privatePosts.map((post) => post.title )}</h2>
+          <Button onClick={handleClick} className={styles.button}>Encerrar</Button>
         </div>
       );
 };

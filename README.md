@@ -46,5 +46,11 @@ Caso algo não esteja claro, fique à vontade para fazer perguntas.
  - Fazer 1 request, no lugar de 2 para acessar a receita
  - Adicionar Arquivo de Strings para facilitar tradução
  - Adicionar docker-compose pra executar testes
- - 
+ - Lidar melhor em caso de erros
+ - Alguma forma mais fácil de adicionar receitas, do que converter pra Json?
+ - Adicionar collection(mongoDB) para a execução das receitas
+ - Adicionar navbar
+ - Adicionar funcionalidade de criar conta
+ - Remover user/password de arquivo e mover para o banco
+ 
 
