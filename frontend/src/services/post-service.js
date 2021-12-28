@@ -8,13 +8,10 @@ const getAllPublicPosts = () => {
 };
 
 const getAllPrivatePosts = () => {
-  console.log("Private")
-  return axios.get(API_URL + "/private", { headers: authHeader() });
+  return axios.get(API_URL + "/all", { headers: authHeader() });
 };
 
 const getSpecificRecipe = (id) => {
-  console.log("SpecificRecipe")
-  console.log(id)
   const config = {
     headers: authHeader(),
     params: {
@@ -24,10 +21,21 @@ const getSpecificRecipe = (id) => {
   return axios.get(API_URL+"/id", config);
 };
 
+const getRecipeId = (recipe_name) => {
+  const config = {
+    headers: authHeader(),
+    params: {
+      recipe_name: recipe_name 
+    },
+  }
+  return axios.get(API_URL+"/name", config);
+};
+
 const postService = {
   getAllPublicPosts,
   getAllPrivatePosts,
   getSpecificRecipe,
+  getRecipeId,
 };
 
 export default postService;

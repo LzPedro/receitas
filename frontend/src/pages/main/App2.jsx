@@ -21,7 +21,7 @@ const App2 = () => {
       (error) => {
         console.log("Private page", error.response);
         // Invalid token
-        if (error.response.status == 403) {
+        if (error.response.status === 403) {
           AuthService.logout();
           navigate("/login");
           window.location.reload();
@@ -30,12 +30,31 @@ const App2 = () => {
     );
   }, []);
 
+  const handleClick = async (event) => {
+    PostService.getRecipeId(event.target.textContent).then(
+      (response) => {
+        console.log(response.data)
+        navigate("/recipe/"+response.data);
+        window.location.reload();
+      },
+      (error) => {
+        console.log("Private page", error.response);
+        // Invalid token
+        if (error.response.status === 403) {
+          AuthService.logout();
+          navigate("/login");
+          window.location.reload();
+        }
+      }
+    );
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.h1}>
             Pedidos
         </h1>
-        <h1 className={styles.h1}> {privatePosts.map((post) => <Button className={styles.button}> {post.title} </Button> )} </h1>
+        <h1 className={styles.h1} onClick={handleClick}> {privatePosts.map((post) => <Button className={styles.button} key={post.title}> {post.title} </Button> )} </h1>
         
   </div>
   );

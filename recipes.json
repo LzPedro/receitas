@@ -1,27 +1,301 @@
 [
-	{
-		"recipe_id": 1,
-		"title": "Arroz de Mariscos para 2 pessoas",
-		"summary": "Arroz com camarão, lula, peixe, lagosta, e mexilhão, refogado com pimentões e cebola juliene, temperos e um leve toque de açafrão. Servidos na paellera. Rico em sabor e apresentação.",
-		"ingredient":[
-			{"item":"1 cebola"},
-			{"item":"2 dentes de alho"},
-			{"item":"3 colheres de sopa de Azeite"},
-			{"item":"4 tomates"},
-			{"item":"2 Pitadas de Sal"},
-			{"item":"1 embalagem de marisco (mistura)"},
-			{"item":"1 embalagem de camarão inteiro congelado"},
-			{"item":"1 chávena de arroz"},
-			{"item":"1 porção de coentros"}
-		],
-		"duration": "25",
-		"directions":[
-			{"Passo":"Faça um refogado com o azeite a cebola e os dentes de alho bem picados. Esmague os tomates maduros sem pele e junte ao refogado. Tempere com sal. Deixe 'namorar' durante alguns minutos."},
-			{"Passo":"Deixe a descongelar a embalagem de cocktail de marisco e delícias do mar, retire-as também do congelador e ponha-as de parte."},
-			{"Passo":"Junte os mariscos (as delícias ficam para mais tarde) ao refogado e mexa. Com o lume brando, tape o tacho e deixe 'namorar' durante 15 minutos. "},
-			{"Passo":"Junte água a tapar esta mistura e assim que ferver deite o arroz e mexa. Quando retomar a fervura, deixe cozer tapado durante 10 minutos, vá mexendo para não pegar."},
-			{"Passo":"Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida."},
-			{"Passo":"Depois temos o Arroz de Marisco Tradicional que leva todo o tipo marisco, desde sapateira, lagosta, mexilhões e etc."}
-		]  
-	}
+    {
+        "recipe_id": 1,
+        "title": "Arroz de Mariscos para 2 pessoas",
+        "summary": "Arroz com camarão, lula, peixe, lagosta, e mexilhão, refogado com pimentões e cebola juliene, temperos e um leve toque de açafrão. Servidos na paellera. Rico em sabor e apresentação.",
+        "ingredient": [
+            {
+                "item": "1 cebola"
+            },
+            {
+                "item": "2 dentes de alho"
+            },
+            {
+                "item": "3 colheres de sopa de Azeite"
+            },
+            {
+                "item": "4 tomates"
+            },
+            {
+                "item": "2 Pitadas de Sal"
+            },
+            {
+                "item": "1 embalagem de marisco (mistura)"
+            },
+            {
+                "item": "1 embalagem de camarão inteiro congelado"
+            },
+            {
+                "item": "1 chávena de arroz"
+            },
+            {
+                "item": "1 porção de coentros"
+            }
+        ],
+        "duration": "25",
+        "directions": [
+            {
+                "Passo": "Faça um refogado com o azeite a cebola e os dentes de alho bem picados. Esmague os tomates maduros sem pele e junte ao refogado. Tempere com sal. Deixe 'namorar' durante alguns minutos."
+            },
+            {
+                "Passo": "Deixe a descongelar a embalagem de cocktail de marisco e delícias do mar, retire-as também do congelador e ponha-as de parte."
+            },
+            {
+                "Passo": "Junte os mariscos (as delícias ficam para mais tarde) ao refogado e mexa. Com o lume brando, tape o tacho e deixe 'namorar' durante 15 minutos. "
+            },
+            {
+                "Passo": "Junte água a tapar esta mistura e assim que ferver deite o arroz e mexa. Quando retomar a fervura, deixe cozer tapado durante 10 minutos, vá mexendo para não pegar."
+            },
+            {
+                "Passo": "Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida."
+            },
+            {
+                "Passo": "Depois temos o Arroz de Marisco Tradicional que leva todo o tipo marisco, desde sapateira, lagosta, mexilhões e etc."
+            }
+        ]
+    },
+    {
+        "recipe_id": 2,
+        "title": "Moqueca Tropical",
+        "summary": "Escolha entre Camarão ou Peixe ou a combinação dos dois | De origem indígena. A moqueca é um cozido de peixe ou camarão ou com mistura de peixe e camarão com tomate, cebola, pimentões e cheiro-verde refogados. Leve toque de azeite de dendê e leite de coco natural. Na versão tropical, acrescentamos manga e abacaxi. Acompanha arroz branco, pirão de camarão e farofa de dendê.",
+        "ingredient": [
+            {
+                "item": "2 kg de robalo cortado em postas com couro"
+            },
+            {
+                "item": "4 cebolas grandes"
+            },
+            {
+                "item": "1 cabeça de alho"
+            },
+            {
+                "item": "4 tomates grandes"
+            },
+            {
+                "item": "Farinha de mandioca"
+            },
+            {
+                "item": "100ml de azeite de dendê"
+            },
+            {
+                "item": "2 pimentões vermelhos"
+            },
+            {
+                "item": "Sal (à gosto)"
+            },
+            {
+                "item": "Pimenta do reino a gosto"
+            },
+            {
+                "item": "Espinhas e cabeça do robalo"
+            },
+            {
+                "item": "4 bananas em fatias"
+            },
+            {
+                "item": "1kg de camarão descascado"
+            }
+        ],
+        "duration": "40",
+        "directions": [
+            {
+                "Passo": "Prepare o caldo de peixe com as espinhas e cabeça."
+            },
+            {
+                "Passo": "Acrescente cebola, pimentão, tomate, alho, sal e pimenta ao caldo até apurar."
+            },
+            {
+                "Passo": "Coloque as bananas por baixo da terrine, intercale com o molho e o peixe."
+            },
+            {
+                "Passo": "Tempere com sal e pimenta."
+            },
+            {
+                "Passo": "Cubra com o molho já com o camarão."
+            },
+            {
+                "Passo": "Leve ao forno por 20 minutos."
+            }
+        ]
+    },
+    {
+        "recipe_id": 3,
+        "title": "Frutos do Mar ao Azeite de Ervas",
+        "summary": "Para apreciadores de frutos do mar, com leve aroma de azeite de ervas finas. Mexilhões, polvo, peixe, camarão e lula salteados com azeite, champignon, cebola picada,pimentão, alho, alcaparras e brócolis. Servidos com arroz de brócolis e legumes salteados.",
+        "ingredient": [
+            {
+                "item": "250 gr fettuccine"
+            },
+            {
+                "item": "250 gr lula "
+            },
+            {
+                "item": "6 unidades de vieira "
+            },
+            {
+                "item": "6 unidades de camarão rosa "
+            },
+            {
+                "item": "60 gr vôngole "
+            },
+            {
+                "item": "100 gr tomate cereja "
+            },
+            {
+                "item": "100 gr mini-abobrinha "
+            },
+            {
+                "item": "200 ml azeite de oliva alecrim a gosto"
+            },
+            {
+                "item": "1 maço de tomilho"
+            },
+            {
+                "item": "1 maço de manjericão"
+            },
+            {
+                "item": "30 gr manteiga"
+            }
+        ],
+        "duration": "30",
+        "directions": [
+            {
+                "Passo": "Junte todas as ervas e pique muito bem com a faca. Some a 150 ml de azeite e deixe."
+            },
+            {
+                "Passo": "Limpe as lulas, descartando as nadadeiras e a pele, e guardando os corpos e as cabeças."
+            },
+            {
+                "Passo": "Encha de água uma panela grande e leve ao fogo alto até ferver."
+            },
+            {
+                "Passo": "Junte água a tapar esta mistura e assim que ferver deite o arroz e mexa. Quando retomar a fervura, deixe cozer tapado durante 10 minutos, vá mexendo para não pegar."
+            },
+            {
+                "Passo": "Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida. Selar os camarões, repita o processo com a lula e acabou!"
+            }
+        ]
+    },
+    {
+        "recipe_id": 4,
+        "title": "Massa espaguete à Italiana",
+        "summary": "Espaguete italiano coberto com mexilhões, lula, polvo, camarões, salteados no azeite com alho, cebola, molho de tomates frescos e manjericão.",
+        "ingredient": [
+            {
+                "item": "200 gr Espaguete"
+            },
+            {
+                "item": "6 unidades de vieira "
+            },
+            {
+                "item": "6 unidades de camarão rosa "
+            },
+            {
+                "item": "60 gr vôngole "
+            },
+            {
+                "item": "300 gr tomate cereja "
+            },
+            {
+                "item": "200 ml azeite de oliva alecrim a gosto"
+            },
+            {
+                "item": "1 maço de tomilho"
+            },
+            {
+                "item": "30 gr manteiga "
+            }
+        ],
+        "duration": "18",
+        "directions": [
+            {
+                "Passo": "Cozinhe o macarrão em água fervente e sal, até que fique al dente."
+            },
+            {
+                "Passo": "Enquanto isso, em uma panela, aqueça o azeite, adicione os tomates, os sticks e refogue ligeiramente."
+            },
+            {
+                "Passo": "Junte o manjericão e misture."
+            },
+            {
+                "Passo": "Escorra o macarrão, coloque em um recipiente e adicione o refogado de tomates."
+            },
+            {
+                "Passo": "Apague o lume, junte as delícias cortadas em cubinhos e polvilhe com coentros picados. Sirva de seguida."
+            },
+            {
+                "Passo": "Polvilhe o queijo ralado e sirva a seguir!"
+            }
+        ]
+    },
+    {
+        "recipe_id": 5,
+        "title": "Bobó de Lagosta",
+        "summary": "De origem indígena com toques cearenses. Esta moqueca de lagosta é feita com verduras refogadas acrescidas de leite de coco, azeite de dendê e coentro. Acompanha arroz branco, pirão de camarão e farofa de dendê.",
+        "ingredient": [
+            {
+                "item": "1 kg de camarão fresco"
+            },
+            {
+                "item": "sal a gosto"
+            },
+            {
+                "item": "3 dentes de alho picados e amassados"
+            },
+            {
+                "item": "suco de 1 limão"
+            },
+            {
+                "item": "pimenta-do-reino"
+            },
+            {
+                "item": "1 kg de mandioca (prefira as que já vem embaladas e descascadas, é mais prático)"
+            },
+            {
+                "item": "3 cebolas (1 cortada em rodelas e 2 raladas)"
+            },
+            {
+                "item": "1 folha de louro"
+            },
+            {
+                "item": "6 colheres (sopa) de azeite de oliva"
+            },
+            {
+                "item": "2 vidros de leite de coco"
+            },
+            {
+                "item": "1 maço de cheiro-verde picado"
+            },
+            {
+                "item": "2 latas de molho pronto de tomate (pomarola)"
+            },
+            {
+                "item": "2 pimentões verdes bem picadinhos"
+            },
+            {
+                "item": "2 colheres (sopa) de azeite de dendê"
+            }
+        ],
+        "duration": "50",
+        "directions": [
+            {
+                "Passo": "Lave os camarões e tempere com sal, alho, pimenta e limão, deixe marinar."
+            },
+            {
+                "Passo": "Pegue uma panela com água e cozinhe a mandioca em pedacinhos, com louro e a cebola em rodelas. Quando estiver mole, acrescente um vidro de leite de coco."
+            },
+            {
+                "Passo": "Deixe esfriar um pouco e bata no liquidificador. Esquente o azeite de oliva, junte a cebola ralada e deixe dourar."
+            },
+            {
+                "Passo": "Acrescente os camarões e frite."
+            },
+            {
+                "Passo": "Adicione as 2 latas de pomarola, o cheiro-verde, o pimentão e deixe cozinhar por alguns minutos."
+            },
+            {
+                "Passo": "Junte na mesma panela, a mandioca batida no liquidificador, outro vidro de leite de coco e o azeite de dendê. Deixe levantar fervura e está pronto."
+            }
+        ]
+    }
 ]

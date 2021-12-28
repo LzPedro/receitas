@@ -29,7 +29,6 @@ const useStyles = makeStyles(() => ({
   },
   
   input :{
-    border: '1px solid rgba(252, 252, 252, 0.4)',
     width: '250px',
     borderRadius: '3px',
     fontFamily: "Source Sans Pro, sans-serif",
@@ -39,14 +38,14 @@ const useStyles = makeStyles(() => ({
     textAlign: 'center',
     fontSize: '18px',
     fontWeight: '300',
-    borderColor: "white",
+    borderColor: "white !important",
     marginBottom: '15px !important ',
     "& .MuiOutlinedInput-root": {
       "&:hover fieldset": {
-        borderColor: "white !important",
+        borderColor: "white",
       },
       "&.Mui-focused fieldset": {
-        borderColor: "white !important",
+        borderColor: "white",
       },
     },
     "&::placeholder": {
@@ -54,6 +53,12 @@ const useStyles = makeStyles(() => ({
     },
     "& ::-webkit-input-placeholder": {
       color: "red !important"
+    },
+    "& label.Mui-focused": {
+      color: "white"
+    },
+    "& .MuiInput-underline:after": {
+      borderBottomColor: "white"
     }
 
     

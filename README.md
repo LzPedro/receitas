@@ -40,3 +40,11 @@ O código deve ser disponibilizado em um repositório do GitHub, Bitbucket ou si
 # Conclusão
 
 Caso algo não esteja claro, fique à vontade para fazer perguntas.
+
+# Pontos de Melhoria
+
+ - Fazer 1 request, no lugar de 2 para acessar a receita
+ - Adicionar Arquivo de Strings para facilitar tradução
+ - Adicionar docker-compose pra executar testes
+ - 
+

@@ -21,7 +21,7 @@ const Recipe = () => {
       (error) => {
         console.log("Private page", error.response);
         // Invalid token
-        if (error.response.status == 403) {
+        if (error.response.status === 403) {
           AuthService.logout();
           navigate("/login");
           window.location.reload();
